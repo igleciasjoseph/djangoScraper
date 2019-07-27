@@ -4,13 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>ScrapR</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">
     {% load static %}
     <link rel="stylesheet" href="{% static 'myApp/styles/main.css' %}">
 </head>
 <body>
     <nav>
         <h1>ScrapR</h1>
+        <h1>Check It Out Down Below!</h1>
     </nav>
+    <div id="container">
+        <form action="">
+            {% csrf_token %}
+            <div class="engine">
+                <h1>Search Engine</h1>
+                <select name="" id="" select>
+                    <option selected disabled hidden>Please Select a Search Engine</option>
+                    <option value="">Google</option>
+                    <option value="">Yahoo</option>
+                    <option value="">Bing</option>
+                    <option value="">Ask</option>
+                    <option value="">AOL</option>
+                </select>
+            </div>
+            <div class="search">
+                <h1>Search</h1>
+                <input type="text" placeholder="Enter Here">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
