@@ -29,8 +29,12 @@ nav h1 {
     text-align: center;
 }
 
-.engine h1, .search h1 {
+.engine h1, .search h1, .category h1 {
     margin: 20px;
+}
+
+.category select {
+  margin-bottom: 50px;
 }
 
 input[type=text] {

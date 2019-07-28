@@ -19,19 +19,31 @@
             {% csrf_token %}
             <div class="engine">
                 <h1>Search Engine</h1>
-                <select name="" id="" select>
+                <select name="searchEngine" select>
                     <option selected disabled hidden>Please Select a Search Engine</option>
-                    <option value="">Google</option>
-                    <option value="">Yahoo</option>
-                    <option value="">Bing</option>
-                    <option value="">Ask</option>
-                    <option value="">AOL</option>
+                    <option value="google">Google</option>
+                    <option value="yahoo">Yahoo</option>
+                    <option value="bing">Bing</option>
+                    <option value="ask">Ask</option>
+                    <option value="aol">AOL</option>
                 </select>
             </div>
             <div class="search">
                 <h1>Search</h1>
                 <input type="text" placeholder="Enter Here">
             </div>
+            <div class="category">
+                <h1>Category</h1>
+                <select name="" id="" select>
+                    <option selected disabled hidden>Please Select a Category</option>
+                    <option value="">All</option>
+                    <option value="">News</option>
+                    <option value="">Videos</option>
+                    <option value="">Images</option>
+                    <option value="">Books</option>
+                </select>
+            </div>
+            <input type="submit" value="Submit">
         </form>
     </div>
 </body>
