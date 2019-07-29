@@ -15,11 +15,11 @@
         <h1>Check It Out Down Below!</h1>
     </nav>
     <div id="container">
-        <form action="">
+        <form action="/search" method="POST">
             {% csrf_token %}
             <div class="engine">
                 <h1>Search Engine</h1>
-                <select name="searchEngine" select>
+                <select name="engine" select>
                     <option selected disabled hidden>Please Select a Search Engine</option>
                     <option value="google">Google</option>
                     <option value="yahoo">Yahoo</option>
@@ -30,17 +30,17 @@
             </div>
             <div class="search">
                 <h1>Search</h1>
-                <input type="text" placeholder="Enter Here">
+                <input type="text" placeholder="Enter Here" name="keyword">
             </div>
             <div class="category">
                 <h1>Category</h1>
-                <select name="" id="" select>
+                <select name="category" select>
                     <option selected disabled hidden>Please Select a Category</option>
-                    <option value="">All</option>
-                    <option value="">News</option>
-                    <option value="">Videos</option>
-                    <option value="">Images</option>
-                    <option value="">Books</option>
+                    <option value="all">All</option>
+                    <option value="news">News</option>
+                    <option value="videos">Videos</option>
+                    <option value="images">Images</option>
+                    <option value="books">Books</option>
                 </select>
             </div>
             <input type="submit" value="Submit">
